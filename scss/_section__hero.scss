@@ -1,0 +1,234 @@
+@import "_vars.scss";
+.section__hero {
+  position: relative;
+  background: $bglighty;
+}
+.section__hero__img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 88%;
+  height: auto;
+  z-index: 0;
+}
+.hero {
+  padding: 118px 0 248px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  @media (max-width: 768px){
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+  }
+  @media (max-width: 425px){
+    padding: 45px 0 33px 0;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    width: 0.5px;
+    height: 150px;
+    top: 21px;
+    left: 0;
+    background: $secondary;
+    display: block;
+    @media (max-width: 425px){
+      height: 30px;
+      top: 0;
+    }
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 0.5px;
+    height: 150px;
+    bottom: 118px;
+    left: 0;
+    background: $secondary;
+    display: block;
+    @media (max-width: 425px){
+      height: 30px;
+      top: 213px;
+    }
+  }
+}
+.hero-content {
+  max-width: 610px;
+}
+.hero-content__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 49px;
+  margin: 0px 0px 20px 0px;
+  @media (max-width: 768px){
+    text-align: left;
+  }
+  @media (max-width: 425px){
+    font-size: 24px;
+    line-height: 33px;
+    margin: 0px 0px 10px 0px;
+  }
+}
+.hero-content__title_secondary {
+  color: $secondary;
+}
+.hero-content__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 450px;
+  @media (max-width: 768px){
+    text-align: left;
+    max-width: 100%;
+  }
+  @media (max-width: 425px){
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.hero-card {
+  background: #333333;
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  padding: 20px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 425px){
+    padding: 15px 15px 18px 15px;
+  }
+}
+.hero-card__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  margin: 0px 0px 21px 0px;
+  @media (max-width: 425px){
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0px 0px 10px 0px;
+  }
+}
+.hero-card-item{
+  @media (max-width: 425px){
+    margin-bottom: 10px;
+  }
+  &:nth-child(2){
+    margin: 0px 0px 20px 0px;
+  }
+  &:nth-child(3){
+    margin: 0px 0px 9px 0px;
+  }
+}
+.hero-card-item__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0px 0px 10px 0px;
+  @media (max-width: 425px){
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0px 0px 5px 0px;
+  }
+}
+.form {
+  border: 0.5px solid #CACACA;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.form__input {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  flex: 1 1 auto;
+  background: transparent;
+  color: $primary;
+  padding: 0 10px 0 0;
+  &::placeholder{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #CACACA;
+    @media (max-width: 425px){
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+}
+.form-active {
+  display: flex;
+  align-items: center;
+}
+.form-active__img {
+  margin: 0 5px 0 0;
+}
+.form-active__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0 10px 0 0;
+  @media (max-width: 425px){
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+.form-active__arrow {
+  display: flex;
+  align-items: center;
+  &::before{
+    font-size: 7px;
+  }
+}
+.hero-card-well {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 0px 20px 0px;
+  @media (max-width: 425px){
+    margin: 0px 0px 10px 0px;
+  }
+}
+.hero-card-well__text {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
+  @media (max-width: 425px){
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+.hero-card-well__text_secondary {
+  color: $secondary;
+}
+.hero-card-well__arrows {
+  font-size: 20px;
+  color: $secondary;
+}
+.hero-card__btn {
+  display: flex;
+  padding: 14px 0;
+  margin: 0px 0px 20px 0px;
+  @media (max-width: 425px){
+    font-size: 12px;
+    line-height: 16px;
+    padding: 12px 0;
+    margin: 0px 0px 10px 0px;
+  }
+}
+.hero-card__list {
+  display: flex;
+  justify-content: space-between;
+}

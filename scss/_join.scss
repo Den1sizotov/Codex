@@ -1,0 +1,28 @@
+@import "_vars.scss";
+.section__join {
+  background: $bglighty;
+}
+.join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  @media (max-width: 425px){
+    gap: 20px;
+  }
+}
+.join__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  @media (max-width: 425px){
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+.join__btn {
+  padding: 14px 91px;
+  
+}

@@ -1,0 +1,16 @@
+$maxWidth: 1440;
+//Adaptiv fonts
+@mixin adaptiv_fonts($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+$fontfamily:'Manrope';
+//Сolors
+$primary:#fff;
+$secondary: #D41914;
+$black:#000;
+$lightBlack:#000;
+$gray:#000;
+$bglighty:#333333;
+$bgDark:#2D2D2D;
